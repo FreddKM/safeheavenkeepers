@@ -1,0 +1,7 @@
+.container ol > li, .container ul li {
+  padding: .5rem 0;
+}
+
+ol li li {
+  padding: 5px 0;
+}

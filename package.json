@@ -1,0 +1,30 @@
+{
+  "engines": {
+    "node": "10.9.0"
+  },
+  "name": "shk",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.8"
+  },
+  "description": "Safeheaven-keepers monitor services",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "Just Enable",
+  "license": "ISC",
+  "keywords": [
+    "example",
+    "heroku"
+  ]
+}

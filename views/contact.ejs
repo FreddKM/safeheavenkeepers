@@ -1,0 +1,43 @@
+<% include partials/header %>
+
+<main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 block-heading" style="margin: 40px 0;">
+                <%- confirmationMsg %> 
+                    <h1 class="text-center">Contact Us</h1>
+                    <p class="lead text-center">The best way to reach us is by email. Expect a reply within 12 to 24 hours on business days and at least 48 hours on weekends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-6 lead">
+                    <div class="col-xl feature-box"><i class="icon-location-pin icon" data-aos="fade" data-aos-duration="1000" data-aos-delay="200"></i>
+                        <h4 class="text-dark" data-aos="fade-right">Adresse</h4>
+                        <a target="_blank" href="https://maps.google.com/?q=181 Graves Ave, Sacramento, CA 95838" data-aos="fade-left" data-aos-delay="50">181 Graves Ave, Sacramento, CA 95838<br></a>
+                    </div>
+                    <div class="col-xl feature-box"><i class="icon-envelope icon" data-aos="fade" data-aos-duration="1000" data-aos-delay="200"></i>
+                        <h4 class="text-dark" data-aos="fade-right">Email</h4>
+                        <a href="mailto:safeheavenkeepers@gmail.com" data-aos="fade-left" data-aos-delay="50">safeheavenkeepers@gmail.com<br></>
+                    </div>
+                    <div class="col-xl feature-box"><i class="icon-phone icon" data-aos="fade" data-aos-duration="1000" data-aos-delay="200"></i>
+                        <h4 class="text-dark" data-aos="fade-right">Phone</h4>
+                        <a href="tel:+1 916 470 6528" data-aos="fade-left" data-aos-delay="50">+1 916 470 6528<br></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form method="POST" action="/send" data-aos="fade" style="background-color:rgb(255,255,255); padding: 40px;">
+                        <div class="form-group"><label data-aos="fade-right">Name</label><input name="name" class="form-control" type="text" data-aos="fade-left"></div>
+                        <div class="form-group"><label data-aos="fade-right">Subject</label><input name="subject" class="form-control" type="text" data-aos="fade-left"></div>
+                        <div class="form-group"><label data-aos="fade-right">Email</label><input name="email" class="form-control" type="text" data-aos="fade-left"></div>
+                        <div class="form-group"><label data-aos="fade-right">Message</label><textarea name="message" class="form-control" data-aos="fade-left"></textarea></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" data-aos="fade-up">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="block"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZbmypBVRS2cahEhkequ_aWbiDMrvodmA&amp;q=181+Graves+Ave,+Sacramento,+CA+95838&amp;zoom=15"></iframe></div>
+    </main>
+
+<% include partials/footer %>
