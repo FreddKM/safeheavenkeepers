@@ -53,9 +53,9 @@ app.post('/send', (req, res, next) => {
 
   // using SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
-  sgMail.setApiKey('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');
+  sgMail.setApiKey('API.KEY');
   const msg = {
-    to: 'safeheavenkeepers@gmail.com',
+    to: 'foo@email.com',
     from: req.body.name + '<' + req.body.email + '>',
     subject: req.body.subject,
     text: req.body.message
